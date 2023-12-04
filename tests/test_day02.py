@@ -10,10 +10,10 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"""
 
 class TestDay02(unittest.TestCase):
     def test_part_1(self):
-        self.assertEqual(day02.solve_part1(_INPUT.split("\n")), 8)
+        self.assertEqual(day02.solve_part1(_INPUT.splitlines()), 8)
 
     def test_part_2(self):
-        self.assertEqual(day02.solve_part2(_INPUT.split("\n")), 2286)
+        self.assertEqual(day02.solve_part2(_INPUT.splitlines()), 2286)
 
 if __name__ == '__main__':
     unittest.main()

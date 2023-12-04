@@ -17,10 +17,10 @@ zoneight234
 
 class TestDay01(unittest.TestCase):
     def test_part_1(self):
-        self.assertEqual(day01.solve_part1(_PART_1_INPUT.split()), 142)
+        self.assertEqual(day01.solve_part1(_PART_1_INPUT.splitlines()), 142)
 
     def test_part_2(self):
-        self.assertEqual(day01.solve_part2(_PART_2_INPUT.split()), 281)
+        self.assertEqual(day01.solve_part2(_PART_2_INPUT.splitlines()), 281)
 
 if __name__ == '__main__':
     unittest.main()

@@ -16,10 +16,10 @@ _INPUT = """467..114..
 
 class TestDay03(unittest.TestCase):
     def test_part_1(self):
-        self.assertEqual(day03.solve_part1(_INPUT.split("\n")), 4361)
+        self.assertEqual(day03.solve_part1(_INPUT.splitlines()), 4361)
 
     def test_part_2(self):
-        self.assertEqual(day03.solve_part2(_INPUT.split("\n")), 467835)
+        self.assertEqual(day03.solve_part2(_INPUT.splitlines()), 467835)
 
 if __name__ == '__main__':
     unittest.main()
