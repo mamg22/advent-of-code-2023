@@ -14,7 +14,7 @@ _INPUT = """467..114..
 .664.598..
 """
 
-class TestDay02(unittest.TestCase):
+class TestDay03(unittest.TestCase):
     def test_part_1(self):
         self.assertEqual(day03.solve_part1(_INPUT.split("\n")), 4361)
 
