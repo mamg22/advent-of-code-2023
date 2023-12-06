@@ -86,7 +86,7 @@ def transform_range(value: range, mapping: Map):
     start, stop = value.start, value.stop
 
     start = mapping.apply_transforms(start)
-    # Transform but move the stop point in-range remporarily
+    # Transform but move the stop point in-range temporarily
     # to properly transform it into its new range
     stop = mapping.apply_transforms(stop - 1) + 1
 
