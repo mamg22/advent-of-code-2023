@@ -46,8 +46,6 @@ class Hand:
                     return my_value > their_value
 
     def _get_type(self, cards: list[str], jokers: bool = False):
-        label_value = lambda label: get_label_value(label, self.jokers)
-
         groups = Counter()
         for card in cards:
             groups[card] += 1
