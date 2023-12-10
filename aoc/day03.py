@@ -3,7 +3,7 @@ import string
 from functools import reduce
 from dataclasses import dataclass
 
-from .common import Grid
+from common import Grid
 
 @dataclass
 class Element:
