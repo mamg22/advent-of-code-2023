@@ -191,25 +191,6 @@ def solve_part2(data: list[str]) -> int:
     world, start_pos = extract_info(data)
     loop = get_loop(world, start_pos)
 
-    ENTRY_POINTS = {
-        Cell.Type.vertical,
-        Cell.Type.up_left,
-        Cell.Type.down_left,
-        Cell.Type.up_right,
-        Cell.Type.down_right,
-
-    }
-
-
-    EXIT_POINTS = {
-        Cell.Type.vertical,
-        Cell.Type.up_right,
-        Cell.Type.down_right,
-        Cell.Type.up_left,
-        Cell.Type.down_left,
-    }
-
-
     inner_spaces = 0
     for row in world.content:
         inside = False
