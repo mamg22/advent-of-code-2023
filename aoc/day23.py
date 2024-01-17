@@ -68,8 +68,6 @@ _infinity = float("+Infinity")
 class Node:
     position: Vector2d
     content: str
-    distance: int | float = _infinity
-    previous: Optional[Self] = None
     edges: list['Edge'] = field(default_factory=list)
     visited: bool = False
 
